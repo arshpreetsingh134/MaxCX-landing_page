@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Viezh Robert",
+    "address": "Warsaw, Poland",
+    "path": "user1.svg",
+    "rating": "4.5",
+    "review": "“Wow... I am very happy to use this MaxCX service, it turned out to be more than my expectations and so far there have been no problems. MaxCX always the best.”"
+  },
+  {
+    "id": "2",
+    "name": "Yessica Christy",
+    "address": "Shanxi, China",
+    "path": "user2.svg",
+    "rating": "4.5",
+    "review": "“I like it because I’ve my userbase around the globe and MaxCX just makes it a lot easier for me removing all the inter-continent barriers.”"
+  },
+  {
+    "id": "3",
+    "name": "Kim Young Jou",
+    "address": "Seoul, South Korea",
+    "path": "user3.svg",
+    "rating": "4.5",
+    "review": "“This is very unusual for my business that currently requires a partner that keeps my data at the highest possible security.”"
+  },
+  {
+    "id": "4",
+    "name": "Chloe Zhao",
+    "address": "Wuhan, China",
+    "path": "user2.svg",
+    "rating": "4.7",
+    "review": "“I've been using this service since the last 3 years and I have never witnessed a problem. The scalability and reliability it provides is just awesome.”"
+  },
+  {
+    "id": "5",
+    "name": "Richard Parks",
+    "address": "New York, USA",
+    "path": "user1.svg",
+    "rating": "4.3",
+    "review": "“Very satisfied with the service MaxCX provides. The scalability is just next level!!!”"
+  },
+  {
+    "id": "6",
+    "name": "Caleb McCallister",
+    "address": "Orleans, France",
+    "path": "user3.svg",
+    "rating": "5",
+    "review": "“Never have I ever had such a humbling experience like the one MaxCX provides to its customers. The service is awesome, and they are always there to help.”"
+  }
+]

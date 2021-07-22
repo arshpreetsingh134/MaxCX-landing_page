@@ -1,0 +1,134 @@
+.carousel-head {
+  margin: 0rem $card-margin;
+  padding-top: 1.25rem;
+}
+
+.carousel {
+  padding: 0rem 1.875rem;
+  overflow: hidden;
+  &_card {
+    padding: 1.25rem;
+    margin: 2.1875rem;
+
+    header {
+      @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @include breakpoint-down(medium) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      strong {
+        color: $hero-color;
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      img:first-child {
+        margin-right: 0.625rem;
+      }
+
+      img:last-child {
+        margin-left: 0.4375rem;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0.5rem 6.625rem -3.75rem;
+    }
+
+    p {
+      font-size: 0.9375rem;
+      color: $bold-text-color;
+    }
+  }
+}
+
+.slick-list {
+  margin: 0rem $card-margin;
+  @include breakpoint-down(xsmall) {
+    margin: 0rem;
+  }
+}
+
+.slick-prev {
+  height: 3.125rem;
+  width: 3.125rem;
+  left: 1.5625rem;
+  z-index: 1;
+
+  @include breakpoint-down(xsmall) {
+    height: 1.6875rem;
+    width: 1.6875rem;
+    left: 0.25rem;
+  }
+}
+
+.slick-prev:hover circle {
+  fill: $btn-color;
+}
+
+.slick-prev:hover path {
+  fill: white;
+}
+
+.slick-next {
+  height: 3.125rem;
+  width: 3.125rem;
+  right: 1.5625rem;
+  margin-top: -1.5625rem;
+
+  @include breakpoint-down(xsmall) {
+    height: 1.6875rem;
+    width: 1.6875rem;
+    margin-top: -0.6rem;
+    right: 0.25rem;
+  }
+}
+
+.slick-next:hover circle {
+  fill: $btn-color;
+}
+
+.slick-next:hover path {
+  fill: white;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+.carousel-head {
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.carousel_card {
+  @include breakpoint-down(xsmall) {
+    margin: 0.1875rem;
+  }
+}
+
+.slick-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

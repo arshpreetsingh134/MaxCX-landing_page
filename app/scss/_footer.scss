@@ -1,0 +1,31 @@
+.footer {
+  background: $background-color;
+
+  &_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 15.625em;
+
+    &_column {
+      position: relative;
+      margin-left: 4.6875rem;
+      margin-right: 4.6875rem;
+      padding-top: 1.875rem;
+
+      img:not(:first-child) {
+        margin-right: -0.9375rem;
+      }
+
+      p:last-child {
+        color: #afb5c0;
+      }
+    }
+
+    &_column:not(:first-child) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

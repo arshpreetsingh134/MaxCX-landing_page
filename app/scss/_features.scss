@@ -1,0 +1,85 @@
+.card {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.features {
+  box-shadow: 0 1.875rem 4.6875rem -5rem #0d1025;
+
+  @include breakpoint-up(medium) {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0.125rem;
+    margin-top: $div-margin;
+    margin-bottom: $div-margin;
+  }
+
+  @include breakpoint-down(xsmall) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0.125rem;
+    margin-top: 4.375rem;
+    margin-bottom: 3.75rem;
+    line-height: 3em;
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+      margin-right: 2.188rem;
+
+      @include breakpoint-down(small) {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+    }
+
+    &_font1 {
+      font-size: 1.563rem;
+      color: $bold-text-color;
+      font-weight: bold;
+
+      @include breakpoint-between(medium, small) {
+        font-size: 1.3rem;
+      }
+    }
+
+    &_font2 {
+      font-size: 1.25rem;
+      @include breakpoint-between(medium, small) {
+        font-size: 0.987rem;
+      }
+    }
+
+    @include breakpoint-down(xsmall) {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  &_ruler {
+    content: "";
+    background-color: #eeeff2;
+    width: 0.188rem;
+    height: 7.813rem;
+
+    @include breakpoint-up(large) {
+      display: block;
+    }
+
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+}
